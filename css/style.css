@@ -2,6 +2,7 @@
 
 html {
     overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     color: gray;
     font-weight: 400;
     font-size: 1rem;
+    overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -419,7 +421,8 @@ body:after {
 .site-navbar .site-logo {
     position: relative;
     left: 0;
-    top: -5px;
+    top: 5px;
+    padding-bottom: 10px;
 }
 
 .site-navbar .site-navigation .site-menu {
@@ -2923,4 +2926,54 @@ figure figcaption {
 
 #rulesAndRegLink:hover {
     color: #000;
+}
+
+.policy {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.policy_content {
+    padding-top: 10%;
+}
+
+.myButton {
+    background-color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: #a2c0be;
+    font-family: Arial;
+    font-size: 30px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #a2c0be;
+    margin-left: 75%;
+}
+
+#backToTop {
+    font-size: large;
+    text-align: center;
+    color: darkslategray;
+}
+
+@media only screen and (max-width: 600px) {
+    .myButton {
+        margin-top: -22%;
+        margin-left: 85%;
+    }
+    .policy_content {
+        padding-top: 30%;
+    }
+    .policy {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.myButton:hover {
+    background-color: #fff;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
 }
